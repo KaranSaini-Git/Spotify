@@ -121,7 +121,7 @@ nav {
 .main{
   background-color: black;
   min-width: 98vw;
-  height: 82vh;
+  height: 84vh;
   margin: 0.2rem;
   display: flex;
   justify-content: space-around;
@@ -188,10 +188,71 @@ border-radius: 10px;
 }
 
 /* Main-Right */
-.music-section{
+.main-right{
 width: 74%;
 height: 100%;
 background-color: #121212;
 border-radius: 10px;
 border: 1px solid black;
+overflow: auto;
+}
+.music-section{
+padding-bottom: 30px;
+}
+.music-section h2{
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-top: -10px;
+  margin-bottom: -20px;
+  white-space: 2px;
+  padding-left: 14px;
+}
+.music-card img{
+  height: 10rem;
+  width: 10rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 7px;
+}
+
+.music-card{
+width: 10rem;
+padding: 0.8rem;
+border-radius: 7px;
+position: relative;
+}
+
+.music-card:hover{
+  background-color:#1f1e1e ;
+}
+.music-section{
+  margin: 2rem 0 2rem 2rem 
+}
+.songs{
+  margin: 2rem 0;
+  display: flex;
+  overflow-x: auto;
+}
+.music-title{
+  margin: 0.6rem 0;
+}
+.music-description{
+  font-size: 0.8rem;
+  color: rgb(195, 195, 195);
+}
+.music-play-button{
+  display: flex;
+  color: rgb(50, 239, 16);
+  font-size: 2.8rem;
+  position: absolute;
+  background-color: black;
+  width: 2.8rem;
+  border-radius: 15rem;
+  transform: translate(110px, -50px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.music-card:hover .music-play-button{
+  opacity: 1;
+  transform: translate(110px, -55px);
 }
